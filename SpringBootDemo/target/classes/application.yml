@@ -1,16 +1,16 @@
-#����˿�����
+#服务端口设置
 server:
   port: 8081
 
 
-#���ݿ�����
+#数据库连接
 spring:
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
      url: jdbc:mysql://localhost:3306/db_demo
      username: root
      password: 123456
-#druid���ݿ����ӳ�(��������,�ٶ�һ��~)
+#druid数据库连接池(具体属性,百度一下~)
      type: com.alibaba.druid.pool.DruidDataSource
      maxActive: 20
      initialSize: 1
@@ -25,12 +25,12 @@ spring:
      poolPreparedStatements: true
      maxOpenPreparedStatements: 20
 
-#mybatis����
+#mybatis配置
 mybatis:
    mapper-locations: classpath:mapping/*.xml
    type-aliases-package: com.cr.demo.model
 
-#pagehelper��ҳ���
+#pagehelper分页插件
 #pagehelper:
 #helper-dialect: mysql
 #reasonable: true

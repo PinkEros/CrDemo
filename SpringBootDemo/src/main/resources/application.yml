@@ -1,16 +1,16 @@
-#·şÎñ¶Ë¿ÚÉèÖÃ
+#æœåŠ¡ç«¯å£è®¾ç½®
 server:
   port: 8081
 
 
-#Êı¾İ¿âÁ¬½Ó
+#æ•°æ®åº“è¿æ¥
 spring:
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
      url: jdbc:mysql://localhost:3306/db_demo
      username: root
      password: 123456
-#druidÊı¾İ¿âÁ¬½Ó³Ø(¾ßÌåÊôĞÔ,°Ù¶ÈÒ»ÏÂ~)
+#druidæ•°æ®åº“è¿æ¥æ± (å…·ä½“å±æ€§,ç™¾åº¦ä¸€ä¸‹~)
      type: com.alibaba.druid.pool.DruidDataSource
      maxActive: 20
      initialSize: 1
@@ -25,12 +25,12 @@ spring:
      poolPreparedStatements: true
      maxOpenPreparedStatements: 20
 
-#mybatisÅäÖÃ
+#mybatisé…ç½®
 mybatis:
    mapper-locations: classpath:mapping/*.xml
    type-aliases-package: com.cr.demo.model
 
-#pagehelper·ÖÒ³²å¼ş
+#pagehelperåˆ†é¡µæ’ä»¶
 #pagehelper:
 #helper-dialect: mysql
 #reasonable: true
