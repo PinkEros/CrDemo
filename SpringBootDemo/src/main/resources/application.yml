@@ -1,0 +1,44 @@
+#服务端口设置
+server:
+  port: 8081
+
+
+#数据库连接
+spring:
+   datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/db_demo
+     username: root
+     password: 123456
+#druid数据库连接池(具体属性,百度一下~)
+     type: com.alibaba.druid.pool.DruidDataSource
+     maxActive: 20
+     initialSize: 1
+     maxWait: 60000
+     minIdle: 1
+     timeBetweenEvictionRunsMillis: 60000
+     minEvictableIdleTimeMillis: 300000
+     validationQuery: select 'x'
+     testWhileIdle: true
+     testOnBorrow: false
+     testOnReturn: false
+     poolPreparedStatements: true
+     maxOpenPreparedStatements: 20
+
+#mybatis配置
+mybatis:
+   mapper-locations: classpath:mapping/*.xml
+   type-aliases-package: com.cr.demo.model
+
+#pagehelper分页插件
+#pagehelper:
+#helper-dialect: mysql
+#reasonable: true
+#support-methods-arguments: true
+#params: count=countSql
+
+
+
+
+
+
